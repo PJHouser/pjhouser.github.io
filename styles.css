@@ -2,23 +2,21 @@
  * Globals
  */
 
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "fira sans", roboto, noto, "droid sans", "liberation sans", "lucida grande", "helvetica neue", helvetica, "franklin gothic medium", "century gothic", cantarell, oxygen, ubuntu, sans-serif;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern", "liga" 1, "calt" 0;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
 /* Links */
 a,
 a:focus,
 a:hover {
   color: #fff;
 }
-
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
 
 /*
  * Base structure
@@ -27,8 +25,9 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-color: #312933;
 }
+
 body {
   color: #fff;
   text-align: center;
@@ -154,11 +153,11 @@ body {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 700px) {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    max-width: 700px;
   }
 }
 
@@ -171,18 +170,20 @@ body {
 .profile {
   border-radius: 50%;
   margin-top: 25px;
+  width: 200px;
+  box-shadow: 0 2px 7px rgba(0,0,0,.5);
 }
 
 .btn-purple {
-  background: #572DA1;
-  border-color: #572DA1;
+  background: #7d60af;
+  border-color: #8b77af;
 }
 
 .btn-purple:hover,
 .btn-purple:active,
 .btn-purple:focus {
-  background: #633FA1;
-  border-color: #633FA1;
+  background: #9174c3;
+  border-color: #aa9ac7;
 }
 
 .lead {
